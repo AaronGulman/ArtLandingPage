@@ -1,55 +1,49 @@
-.body{
-	display: flex;
-	align-items: right;
-	justify-content: space-around;
-	margin-left: 30px;
-	margin-top: 90px;
-	margin-right: 90px;
-	height: 100%;
-	width: 100%;
-	color: #fff;
+.body {
+  display: flex;
+  align-items: right;
+  justify-content: space-around;
+  margin-left: 30px;
+  margin-top: 90px;
+  margin-right: 90px;
+  height: 100%;
+  width: 100%;
+  color: #fff;
 }
 
-.header{
-	font-size: 35px;
+.header {
+  font-size: 35px;
 }
 
-.mainParagraph{
-	color: #fff;
-	font-size:65px;
+.mainParagraph {
+  color: #fff;
+  font-size: 65px;
 }
 
-.paragraph{
-	color: #b9b3b377;
-	font-size:25px;
+.paragraph {
+  color: #b9b3b377;
+  font-size: 25px;
 }
 
-.span{
-	color: #5900ff;
+.span {
+  color: #5900ff;
 }
 
-.image{
-	border-radius: 350px 80px 80px 350px / 140px 140px 140px 140px;
-	box-shadow: 
-	5px 5px 10px rgb(78, 9, 142),
-	5px 10px 10px rgb(78, 9, 142),
-	5px -10px 10px rgb(78, 9, 142),
-	-10px 5px 10px rgb(78, 9, 142);
-
-
+.image {
+  border-radius: 350px 80px 80px 350px / 140px 140px 140px 140px;
+  box-shadow: 5px 5px 10px rgb(78, 9, 142), 5px 10px 10px rgb(78, 9, 142),
+    5px -10px 10px rgb(78, 9, 142), -10px 5px 10px rgb(78, 9, 142);
 }
 
-.button{
-	outline: none;
-	border: none;
-	padding: 10px;
-	font-weight: bold;
-	background: #5900ff;
-	color: #fff;
-	min-width: 300px;
+.button {
+  outline: none;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  background: #5900ff;
+  color: #fff;
+  min-width: 300px;
 }
 
-.button:hover{
-	background: #340788;
-
+.button:hover {
+  background: #340788;
 }

@@ -1,69 +1,61 @@
-.header{
-	display: flex;
-	color: #fff;
-	justify-content: space-between;
-	height: 50px;
-	padding: 10px;
-	align-items: center;
-	border-bottom: 5px solid #ffffff36;
-
-	
+.header {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  height: 50px;
+  padding: 10px;
+  align-items: center;
+  border-bottom: 5px solid #ffffff36;
 }
 
-
-.pageName{
-	margin-left: 10px;
-	font-size: 28px;
+.pageName {
+  margin-left: 10px;
+  font-size: 28px;
 }
-
 
 .links {
-	color: #fff;
-	text-decoration: none;
-	height: 100%;
+  color: #fff;
+  text-decoration: none;
+  height: 100%;
 }
 
-.list{
-	text-align: center;
-	min-width: 60px;
-	padding: 10px;
+.list {
+  text-align: center;
+  min-width: 60px;
+  padding: 10px;
 }
 
-.ul{
-	display: flex;
-	list-style: none;
-	align-items: center;
-	gap: 55px;
-
+.ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 55px;
 }
 
-
-.nav{
-	display: flex;
-	height: 100%;
-	width: 700px;
-	align-items: center;
-	
-
+.nav {
+  display: flex;
+  height: 100%;
+  width: 700px;
+  align-items: center;
 }
 
-.contact{
-	font-weight: bold;
-	color: #fff;
-	background: #7707e8;
-	padding: 10px;
-	min-width: 50px;
+.contact {
+  font-weight: bold;
+  color: #fff;
+  background: #7707e8;
+  padding: 10px;
+  min-width: 50px;
 }
 
-.links:hover{
-	background: #5811a0;
+.links:hover {
+  background: #5811a0;
 }
 
-.list:hover{
-	color: #000;
-	background: #5811a0;
+.list:hover {
+  color: #000;
+  background: #5811a0;
 }
 
-.contact:hover{
-	background: #5811a0;
+.contact:hover {
+  background: #5811a0;
 }
