@@ -15,9 +15,7 @@ function Header() {
           <span className={style.span}>experience</span>. <br></br>
         </p>
         <p className={style.paragraph}>
-          With 1000 years of passion and a formal art diploma, <br></br>each
-          stroke tells a story, each piece a journey. <br></br>Welcome to my
-          creative sanctuary.
+         (Write about your experience here)
         </p>
         <button className={style.button} type="submit" href="#order">
           ORDER NOW
