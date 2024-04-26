@@ -4,7 +4,8 @@
   "type":"module",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ."
+    "dev": "nodemon .",
+    "server":"node --env-file=config.env server"
   },
   "keywords": [],
   "author": "",
