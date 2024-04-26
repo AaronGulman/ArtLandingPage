@@ -1,0 +1,82 @@
+.projectBox {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+  margin-left: 30px +1;
+  padding: 50px;
+  height: 100vh;
+  color: #fff;
+}
+
+.header {
+  font-size: 45px;
+  margin-left: 30px;
+  transform: translateX(100px) rotate(2deg);
+}
+
+.mainParagraph {
+  color: #fff;
+  font-size: 35px;
+  transform: translateX(100px) rotate(-2deg);
+  margin-left: 30px;
+  margin-top: 0;
+}
+
+.span {
+  color: #5900ff;
+}
+
+.projects {
+  display: flex;
+  padding: 50px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 400px;
+  gap: 100px;
+  align-items: center;
+  border-top: 2px solid #ffffff36;
+  border-bottom: 2px solid #ffffff36;
+  transform: rotate(-6deg);
+}
+
+.hr {
+  height: 100%;
+}
+
+.image {
+  height: 350px;
+  width: 350px;
+  border-radius: 100px 100px 100px 100px;
+  border-right: 2px solid #ffffff36;
+  /* / 140px 140px 140px 140px; */
+  box-shadow: 5px 5px 10px rgb(78, 9, 142), 5px 10px 10px rgb(78, 9, 142),
+    5px -10px 10px rgb(78, 9, 142), -10px 5px 10px rgb(78, 9, 142);
+}
+
+.image:hover {
+  animation: zoomIn 1s forwards;
+}
+
+@keyframes zoomIn {
+  0% {
+  }
+  100% {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+.button {
+  outline: none;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  background: #5900ff;
+  color: #fff;
+  min-width: 300px;
+}
+
+.button:hover {
+  background: #340788;
+}

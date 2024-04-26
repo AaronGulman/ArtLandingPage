@@ -2,7 +2,7 @@ import style from "./Header.module.css";
 
 function Header() {
   return (
-    <header className={style.header}>
+    <div className={style.header}>
       <h1 className={style.pageName}>Landing Page</h1>
       <nav className={style.nav}>
         <ul className={style.ul}>
@@ -12,8 +12,8 @@ function Header() {
             </a>
           </li>
           <li className={style.list}>
-            <a className={style.links} href="#offers">
-              Offers
+            <a className={style.links} href="#Services">
+              Services
             </a>
           </li>
           {/* <li className={style.list}><a className={style.links} href="#">Contact</a></li> */}
@@ -29,7 +29,7 @@ function Header() {
           </li>
         </ul>
       </nav>
-    </header>
+    </div>
   );
 }
 
