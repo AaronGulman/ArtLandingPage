@@ -2,10 +2,14 @@
   display: flex;
   color: #fff;
   justify-content: space-between;
+  top: 0;
   height: 50px;
+  width: 100%;
   padding: 10px;
   align-items: center;
   border-bottom: 5px solid #ffffff36;
+  position: fixed;
+  background: #000;
 }
 
 .pageName {
