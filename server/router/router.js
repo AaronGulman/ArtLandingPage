@@ -45,9 +45,9 @@ router.post("/", async (req, res) => {
       order: req.body.order,
       email: req.body.email,
       number: req.body.number,
-      preferance: req.body.preferance
+      preferance: req.body.preference,
     };
-    
+
     let collection = await db.collection("orders");
     let result = await collection.insertOne(newOrder);
 
