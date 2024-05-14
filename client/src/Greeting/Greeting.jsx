@@ -4,7 +4,7 @@ import style from "./Greeting.module.css";
 
 // import image from '../assets/image.jpg'
 
-function Header() {
+function Greeting() {
   return (
     <div className={style.body}>
       <div>
@@ -14,9 +14,7 @@ function Header() {
           <span className={style.span}>artistry</span> meets{" "}
           <span className={style.span}>experience</span>. <br></br>
         </p>
-        <p className={style.paragraph}>
-         (Write about your experience here)
-        </p>
+        <p className={style.paragraph}>(Write about your experience here)</p>
         <button className={style.button} type="submit" href="#order">
           ORDER NOW
         </button>
@@ -27,4 +25,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Greeting;
