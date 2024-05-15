@@ -10,6 +10,7 @@
   border-bottom: 5px solid #ffffff36;
   position: fixed;
   background: #000;
+  z-index: 10;
 }
 
 .pageName {
