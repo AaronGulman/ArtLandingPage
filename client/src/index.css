@@ -2,6 +2,8 @@ body,
 html {
   background: #000000;
   overflow-x: hidden;
-  height: 100vh;
+}
+
+section{
   width: 100vw;
 }
