@@ -3,7 +3,7 @@ import style from "./Header.module.css";
 function Header() {
   return (
     <div className={style.header}>
-      <h1 className={style.pageName}>Landing Page</h1>
+      <h1 className={style.pageName}><img height={110} width={200} src="../../public/NewLogo.svg"/></h1>
       <nav className={style.nav}>
         <ul className={style.ul}>
           <li className={style.list}>
