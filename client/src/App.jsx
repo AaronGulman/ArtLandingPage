@@ -1,8 +1,8 @@
-import Header from "./Header/Header";
-import Greeting from "./Greeting/Greeting";
-import Experience from "./Experience/Experience";
-import Projects from "./Projects/Projects";
-import Services from "./Services/Services";
+import Header from "./components/Header/Header";
+import Greeting from "./components/Greeting/Greeting";
+import Experience from "./components/Experience/Experience";
+import Projects from "./components/Projects/Projects";
+import Services from "./components/Services/Services";
 
 function App() {
   return (
