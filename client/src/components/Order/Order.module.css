@@ -1,0 +1,10 @@
+.body{
+	display: block;
+	position: absolute;
+	width:25em;
+	height: 50em;
+	background: linear-gradient(#630db9 , #ffff);
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
