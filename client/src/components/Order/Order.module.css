@@ -1,10 +1,33 @@
-.body{
+.body {
 	display: block;
 	position: absolute;
-	width:25em;
-	height: 50em;
-	background: linear-gradient(#630db9 , #ffff);
+	width: 25em;
+	height: 20em;
+	background: linear-gradient(#630db9, #ffff);
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%,-50%);
-}
+	transform: translate(-50%, 50%);
+	border-radius: 50%;
+	animation: lazer 1s infinite;
+    }
+    
+    @keyframes lazer {
+	0% {
+		box-shadow: 
+		-5px 5px 50px #fff, 
+		5px -5px 50px #fff,
+		-10px 10px 50px #fff,
+		10px -10px 50px #fff;
+	}
+	50%{
+		box-shadow: 0px 0px 0px #fff ;
+	}
+	100% {
+		box-shadow: 
+		-5px 5px 50px #fff, 
+		5px -5px 50px #fff,
+		-10px 10px 50px #fff,
+		10px -10px 50px #fff;
+	}
+    }
+    
