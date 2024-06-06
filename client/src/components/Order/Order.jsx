@@ -10,14 +10,14 @@ const Order = () => {
       <input type='tel' />
       <label>Email: </label>
       <input type="email" />
-      <label>Preferred means of communication:</label>
+      <label>Preferred Contact Method</label>
       <div>
       <input type="checkbox" name="" id=""/>WhatsApp
       <input type="checkbox" name="" id=""/>SMS
       <input type="checkbox" name="" id=""/>Email
       <input type="checkbox" name="" id=""/>Social Media
       </div>
-      <input type="submit" value="SUBMIT" />
+      <input className={style.submit} type="submit" value="SUBMIT" />
 
       
     </form>
