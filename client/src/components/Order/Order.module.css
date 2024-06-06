@@ -12,7 +12,30 @@
 	transform: translate(-50%, 50%);
 	border-radius: 50%;
 	animation: lazer 1s infinite;
+	gap: 5px;
     }
+
+
+input{
+	outline: none;
+	background:#000;
+	color: #630db9;
+}
+
+h1{
+	margin-bottom: 0;
+}
+
+.submit{
+	color: #fff;
+	width:10em;
+	height: 2em;
+	background: transparent;
+}
+
+
+
+
     
     @keyframes lazer {
 	0% {
@@ -33,4 +56,6 @@
 		10px -10px 50px #fff;
 	}
     }
+
+
     
