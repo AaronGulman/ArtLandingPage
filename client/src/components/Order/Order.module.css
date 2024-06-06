@@ -1,9 +1,12 @@
 .body {
 	display: block;
 	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	width: 25em;
 	height: 20em;
-	background: linear-gradient(#630db9, #ffff);
+	background: linear-gradient(#630db9, #000);
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, 50%);
