@@ -38,16 +38,6 @@ h1{
 
     
     @keyframes lazer {
-	/* 0% {
-		box-shadow: 
-		-5px 5px 50px #fff, 
-		5px -5px 50px #fff,
-		-10px 10px 50px #fff,
-		10px -10px 50px #fff;
-	}
-	50%{
-		box-shadow: 0px 0px 0px #fff ;
-	} */
 	100% {
 		box-shadow: 
 		-5px 5px 50px #fff, 
