@@ -1,4 +1,4 @@
-import style from './Order.module.css'
+import style from "./Order.module.css";
 
 const Order = () => {
   return (
@@ -7,19 +7,21 @@ const Order = () => {
       <label>Name: </label>
       <input type="text" />
       <label>Phone number: </label>
-      <input type='tel' />
+      <input type="tel" />
       <label>Email: </label>
       <input type="email" />
       <label>Preferred Contact Method</label>
       <div>
-      <input type="checkbox" name="" id=""/>WhatsApp
-      <input type="checkbox" name="" id=""/>SMS
-      <input type="checkbox" name="" id=""/>Email
-      <input type="checkbox" name="" id=""/>Social Media
+        <input type="checkbox" />
+        WhatsApp
+        <input type="checkbox" />
+        SMS
+        <input type="checkbox" />
+        Email
+        <input type="checkbox" />
+        Social Media
       </div>
       <input className={style.submit} type="submit" value="SUBMIT" />
-
-      
     </form>
   );
 };
