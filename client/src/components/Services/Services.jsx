@@ -4,13 +4,13 @@ function Services() {
   return (
     <div className={style.projectBox}>
       <h1 className={style.header}>
-        Projects made by <span className={style.span}>ME</span>
+        Projects made by <span className={style.span}>(your name)</span>
       </h1>
       <p className={style.mainParagraph}>
-        Discover my <span className={style.span}>diverse portfolio</span>, a
-        kaleidoscope of <span className={style.span}>artistic</span> endeavors
-        <br></br> that showcases the depth and breadth of my{" "}
-        <span className={style.span}>creative vision.</span>{" "}
+        Write <span className={style.span}>about</span>, a
+       the <span className={style.span}>projects</span> that
+        <br></br> you have worked on{" "}
+        <span className={style.span}>here..</span>{" "}
       </p>
     </div>
   );
