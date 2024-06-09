@@ -12,30 +12,34 @@ function Header() {
   return (
     <div className={style.header}>
       <h1 className={style.pageName}>
-        <img height={110} width={200} src="../../public/NewLogo.svg" alt="Logo" />
+        <img
+          height={110}
+          width={200}
+          src="../../public/NewLogo.svg"
+          alt="Logo"
+        />
       </h1>
       <nav className={style.nav}>
         <ul className={style.ul}>
-          <li className={style.list}>
-            <a className={style.links} href="#projects">
-              Projects
-            </a>
-          </li>
-          <li className={style.list}>
-            <a className={style.links} href="#Services">
-              Services
-            </a>
-          </li>
-          <li className={style.list}>
-            <a className={style.links} href="#contact">
-              Contact
-            </a>
-          </li>
-          <li className={style.contact}>
-            <a onClick={toggleOrderVisibility} className={style.links} href="#order">
-              Order
-            </a>
-          </li>
+          <a className={style.links} href="#projects">
+            <li className={style.list}>Projects</li>
+          </a>
+
+          <a className={style.links} href="#Services">
+            <li className={style.list}>Services</li>
+          </a>
+
+          <a className={style.links} href="#contact">
+            <li className={style.list}>Contact</li>
+          </a>
+
+          <a
+            onClick={toggleOrderVisibility}
+            className={style.links}
+            href="#order"
+          >
+            <li className={style.contact}>Order</li>
+          </a>
         </ul>
       </nav>
       {isOrderVisible && <Order />}
