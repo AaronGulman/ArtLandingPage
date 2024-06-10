@@ -15,7 +15,7 @@ function App() {
         <Greeting />
       </section>
 
-      <section>
+      <section id="experience">
         <Experience />
       </section>
 
