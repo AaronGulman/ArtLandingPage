@@ -1,0 +1,25 @@
+.card{
+height: 600px;
+width: 300px;
+border-radius: 10px;
+background: #4d0437;
+position: relative;
+
+}
+
+.card:hover {
+	animation: zoomIn 1s forwards;
+      }
+      
+      @keyframes zoomIn {
+	0% {
+		transform: translate(0,0);
+	}
+	100% {
+	  transform: translate(0,-20px);
+	}
+      }
+
+.cardBack{
+	animation: zoomIn 1s forwards;
+}
