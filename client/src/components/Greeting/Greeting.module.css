@@ -1,10 +1,12 @@
 .body {
   display: flex;
-  justify-content: space-around;
-  margin-top: 90px;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  width: 90%;
+  width: 100%;
   color: #fff;
+  flex-direction: column;
+  justify-items: space-around;
 }
 
 .header {
@@ -17,6 +19,7 @@
 }
 
 .paragraph {
+  
   color: #b9b3b377;
   font-size: 25px;
 }
@@ -38,7 +41,7 @@
   font-weight: bold;
   background: #5900ff;
   color: #fff;
-  min-width: 300px;
+  max-width: 300px;
 }
 
 .button:hover {
