@@ -87,3 +87,110 @@
 .contact:hover {
   background: #5811a0;
 }
+
+@media only screen and (max-width: 390px ) {
+  .header {
+    display: flex;
+    color: #fff;
+    top: 0;
+    height: 50px;
+    width: 100vw;
+    align-items: center;
+    border-bottom: 5px solid #ffffff36;
+    position: fixed; 
+    background: #000;
+    z-index: 10;
+    
+  } 
+
+
+.pageName {
+  margin-left: 10px;
+  font-size: 28px;
+}
+
+.links {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  height: 100%;
+  flex-direction: column;
+}
+
+.list {
+  text-align: center;
+  min-width: 60px;
+  padding: 10px;    
+}
+
+.ul {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  list-style: none;
+  gap: 5px;
+}
+
+.nav {
+  display: flex;
+  height: 100%;
+  width: 50vw;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.contact {
+  font-weight: bold;
+  color: #fff;
+  background: #7707e8;
+  padding: 10px;
+  min-width: 50px;
+}
+
+.links::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgb(122, 81, 28);
+  transition: width 0.5s;
+  left: 0;
+  bottom: 0;
+}
+
+.links:hover::after {
+  width: 100%;  
+  background: linear-gradient(to right, rgb(199, 122, 22), rgb(255, 0, 0));
+
+
+}
+
+.links:hover {
+  background: #5811a0;
+}
+
+.list {
+  color: #fff;
+}
+
+.list:hover {
+  background: #5811a0;
+}
+
+.contact:hover {
+  background: #5811a0;
+}  
+
+
+
+  .dropdownButton{
+    position: absolute;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    background: #5900ff;
+    color: #fff;
+    max-width: 300px;  }
+}
