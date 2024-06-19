@@ -6,7 +6,7 @@ const Card = ({ price }) => {
 
   return (
     <div className={style.card}>
-      <h1 className={style.cardHeader}>Hello</h1>
+      <h1 className={style.cardHeader}>Service Name</h1>
       <img src="" alt="Place a picture here" />
       <h3 className={style.price}>${price}</h3>
     </div>
