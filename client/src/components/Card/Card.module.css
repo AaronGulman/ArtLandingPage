@@ -1,25 +1,56 @@
-.card{
-height: 600px;
-width: 300px;
-border-radius: 10px;
-background: #4d0437;
-position: relative;
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 300px;
+  border-radius: 10px;
+  background: transparent;
+  position: relative;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  box-shadow: 
+  5px 5px 30px rgb(78, 9, 142), 
+  5px -5px 30px rgb(78, 9, 142),
+  5px 10px 30px rgb(78, 9, 142),
+  5px -10px 30px rgb(78, 9, 142),
+  -10px -15px 30px rgb(78, 9, 142),
+  -10px 15px 30px rgb(78, 9, 142),
+  10px 15px 30px rgb(78, 9, 142),
+  10px 15px 30px rgb(78, 9, 142);
+
+
 
 }
 
 .card:hover {
-	animation: zoomIn 1s forwards;
-      }
-      
-      @keyframes zoomIn {
-	0% {
-		transform: translate(0,0);
-	}
-	100% {
-	  transform: translate(0,-20px);
-	}
-      }
+  animation: zoomIn 1s forwards;
+}
 
-.cardBack{
-	animation: zoomIn 1s forwards;
+@keyframes zoomIn {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, -20px);
+  }
+}
+
+.cardBack {
+  animation: zoomIn 1s forwards;
+}
+
+.cardHeader {
+  display: flex;
+  font-weight: 900;
+  justify-content: center;
+}
+
+.price {
+  padding: 25px;
+  background: #776c6c;
+  text-align: center;
+  width: 100px;
+
 }
