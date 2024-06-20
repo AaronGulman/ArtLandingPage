@@ -1,17 +1,19 @@
 .projectBox {
   display: flex;
-  justify-content: space-around;
-  margin-top: 90px;
+  justify-content: center;
   height: 100vh;
   width: 100%;
   color: #fff;
   flex-direction: column;
+  justify-items: space-around;
 }
 
-.header {
+.header { 
   font-size: 45px;
   margin-left: 30px;
+  margin-bottom: 0;
   transform: translateX(100px) rotate(2deg);
+  transition: transform 1s;
 }
 
 .mainParagraph {
@@ -20,6 +22,7 @@
   transform: translateX(100px) rotate(-2deg);
   margin-left: 30px;
   margin-top: 0;
+  transition: transform 1s;
 }
 
 .span {
@@ -38,6 +41,7 @@
   border-top: 2px solid #ffffff36;
   border-bottom: 2px solid #ffffff36;
   transform: rotate(-6deg);
+  transition: transform 1s;
 }
 
 .hr {
@@ -49,22 +53,14 @@
   width: 350px;
   border-radius: 100px 100px 100px 100px;
   border-right: 2px solid #ffffff36;
-  /* / 140px 140px 140px 140px; */
   box-shadow: 5px 5px 10px rgb(78, 9, 142), 5px 10px 10px rgb(78, 9, 142),
     5px -10px 10px rgb(78, 9, 142), -10px 5px 10px rgb(78, 9, 142);
+  transition: height 1s, width 1s;
 }
 
 .image:hover {
-  animation: zoomIn 1s forwards;
-}
-
-@keyframes zoomIn {
-  0% {
-  }
-  100% {
-    height: 400px;
-    width: 400px;
-  }
+  height: 400px;
+  width: 400px;
 }
 
 .button {
@@ -75,6 +71,7 @@
   background: #5900ff;
   color: #fff;
   min-width: 300px;
+  transition: background 0.3s;
 }
 
 .button:hover {
