@@ -11,6 +11,13 @@
 
 The Art Landing Page Template is a project designed to provide artists and creatives with a customizable personal website template. This template allows users to showcase their work, list their services, and accept orders from clients. Built using the MERN stack (MongoDB, Express.js, React, and Node.js), this project aims to offer a modern, responsive, and user-friendly platform for managing personal portfolios and client interactions.
 
+<img width="400" alt="Website1" src="https://github.com/AaronGulman/ArtLandingPage/assets/81993286/b058b24b-8b1a-4740-8b0d-51a627c748ec">
+<img width="400" alt="Website2" src="https://github.com/AaronGulman/ArtLandingPage/assets/81993286/8620febe-0df4-4564-81f2-42ec35019fc6">
+<img width="400" alt="Website3" src="https://github.com/AaronGulman/ArtLandingPage/assets/81993286/81643092-3c92-42f7-82f2-dcef5db46329">
+<img width="400" alt="Website4" src="https://github.com/AaronGulman/ArtLandingPage/assets/81993286/299c68dc-24cd-44c8-8980-a4de1a9df9e8">
+
+
+
 ## Features
 
 - **Responsive Design**: Ensures the website looks great on all devices.
