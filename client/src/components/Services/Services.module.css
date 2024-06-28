@@ -1,4 +1,4 @@
-.projectBox{
+.servicesBox{
 	display: flex;
 	flex-direction: column;
 	align-items: left;
@@ -28,50 +28,11 @@
 .span{
 	color: #5900ff;
 }
-
-.projects {
-	display: flex;
-	padding: 50px;
-	overflow-x: scroll;
-	overflow-y: hidden;
-	height: 400px;
-	gap: 100px;
-	align-items: center;
-	border-top: 2px solid #ffffff36;
-	border-bottom: 2px solid #ffffff36;
-	transform: rotate(-6deg);
-      }
       
 .hr{
 	height: 100%;
 }
 
-.image{
-	height: 350px;
-	width: 350px;
-	border-radius: 100px 100px 100px 100px;
-	border-right: 2px solid #ffffff36;
-	/* / 140px 140px 140px 140px; */
-	box-shadow: 
-	5px 5px 10px rgb(78, 9, 142),
-	5px 10px 10px rgb(78, 9, 142),
-	5px -10px 10px rgb(78, 9, 142),
-	-10px 5px 10px rgb(78, 9, 142);
-}
-
-.image:hover{
-	animation: zoomIn 1s forwards;
-}
-
-@keyframes zoomIn{
-	0%{
-
-	}
-	100%{
-		height: 400px;
-		width: 400px;
-	}
-}
 
 .button{
 	outline: none;
@@ -86,4 +47,22 @@
 .button:hover{
 	background: #340788;
 
+}
+
+.cards{
+	display: flex;
+	justify-content: center;
+	gap: 100px;
+}
+
+
+
+@keyframes zoomIn{
+	0%{
+
+	}
+	100%{
+		height: 400px;
+		width: 400px;
+	}
 }
