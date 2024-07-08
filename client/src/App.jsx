@@ -3,6 +3,7 @@ import Greeting from "./components/Greeting/Greeting";
 import Experience from "./components/Experience/Experience";
 import Projects from "./components/Projects/Projects";
 import Services from "./components/Services/Services";
+// import Contacts from "./components/Contacts/Contacts";
 
 function App() {
   return (
@@ -23,9 +24,13 @@ function App() {
         <Projects />
       </section>
 
-      <section id="Services">
+      <section id="services">
         <Services />
       </section>
+
+      {/* <section id=" contact">
+        <Contacts/>
+      </section> */}
     </>
   );
 }

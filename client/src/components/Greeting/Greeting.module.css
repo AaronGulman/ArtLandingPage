@@ -12,24 +12,22 @@
 .header {
   font-size: 35px;
   animation: slideIn2 2s;
-
 }
 
 .mainParagraph {
   color: #fff;
   font-size: 65px;
   animation: slideIn 2s;
-
 }
 
 .paragraph {
-  
   color: #b9b3b377;
   font-size: 25px;
 }
 
 .span {
   color: #5900ff;
+  text-shadow: 2px 7px 10px;
 }
 
 .image {
@@ -53,22 +51,22 @@
 }
 
 @keyframes slideIn {
-  from{
+  from {
     opacity: 0;
-   transform: translateX(300px);
+    transform: translateX(300px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateX(0px);
   }
 }
 
 @keyframes slideIn2 {
-  from{
+  from {
     opacity: 0;
-   transform: translateX(-300px);
+    transform: translateX(-300px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateX(0px);
   }
