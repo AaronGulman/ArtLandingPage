@@ -3,22 +3,27 @@
   position: absolute;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   width: 25em;
-  height: 20em;
-  background: linear-gradient(#630db9, #000);
+  height: 25em;
+  background: #2f2e2f;
+  border-radius: 30px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, 50%);
-  border-radius: 50%;
   animation: lazer 10s forwards;
-  gap: 5px;
+  padding: 15px;
 }
 
 input {
+  border-radius: 20px;
   outline: none;
-  background: #000;
-  color: #630db9;
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 10px;
+
 }
 
 h1 {
@@ -26,10 +31,14 @@ h1 {
 }
 
 .submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   width: 10em;
-  height: 2em;
-  background: transparent;
+  height: 3em;
+  border: none;
+  background: #6d14d9;
 }
 
 @keyframes lazer {
