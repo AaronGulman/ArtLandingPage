@@ -11,9 +11,9 @@ function Services() {
       </h1>
       <div className={style.cards}>
         <Card price="999" />
-        <Card />
-        <Card />
-        <Card />
+        <Card price="Price" />
+        <Card price="Price" />
+        <Card price="Price" />
       </div>
     </div>
   );
