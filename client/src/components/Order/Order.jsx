@@ -10,7 +10,7 @@ const Order = () => {
       <input type="tel" />
       <label>Email: </label>
       <input type="email" />
-      <label>Preferred Contact Method</label>
+      <label>Preferred Contact Method:</label>
       <div>
         <input type="checkbox" />
         WhatsApp
