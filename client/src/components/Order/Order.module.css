@@ -1,6 +1,6 @@
 .body {
   display: block;
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -11,7 +11,7 @@
   border-radius: 30px;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, -50%);
   animation: lazer 10s forwards;
   padding: 15px;
 }
