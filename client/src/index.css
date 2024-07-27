@@ -2,8 +2,11 @@ body,
 html {
   background: #000000;
   overflow-x: hidden;
+  cursor: url(../public//cursor.png),auto
 }
 
 section {
   width: 100vw;
 }
+
+
