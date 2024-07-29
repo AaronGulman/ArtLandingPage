@@ -7,6 +7,8 @@
 - **Build Tool**: Vite
 - **Package Manager**: npm
 
+- ### Live Demo: https://aarongulman.github.io/ArtLandingPage/
+
 ## Project Overview
 
 The Art Landing Page Template is a project designed to provide artists and creatives with a customizable personal website template. This template allows users to showcase their work, list their services, and accept orders from clients. Built using the MERN stack (MongoDB, Express.js, React, and Node.js), this project aims to offer a modern, responsive, and user-friendly platform for managing personal portfolios and client interactions.
