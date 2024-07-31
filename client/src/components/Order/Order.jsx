@@ -1,11 +1,13 @@
 import { useState } from "react";
 import style from "./Order.module.css";
 
+
 const Order = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");
   const [preference, setPreference] = useState([]);
+
 
   const handleOrder = () => {
     if (!name || !email || !telephone) {
@@ -26,6 +28,18 @@ const Order = () => {
       .catch((err) => console.error(err));
   };
 
+  const handleCheckboxChange = (event) =>{
+    const {value , checked} = event.target;
+    setPreference(prevPreference => {
+      if(checked){
+        return [...prevPreference, value];
+      }else{
+        return prevPreference.filter(item => item != value)
+      }
+    });
+  };
+
+
   return (
     <div className={style.body}>
       <h1>ORDER NOW</h1>
@@ -41,32 +55,48 @@ const Order = () => {
         value={number}
         onClick={(e) => setNumber(e.target.value)}
       />
+
       <label>Email:</label>
+
       <input
         type="email"
         value={email}
         onClick={(e) => setEmail(e.target.value)}
       />
       <label>Preferred Contact Method:</label>
+
       <div>
         <label>
-          <input type="checkbox" value="WhatsApp" />
+          <input
+            type="checkbox"
+            value="WhatsApp"
+            onClick={handleCheckboxChange}
+          />
           WhatsApp
         </label>
         <label>
-          <input type="checkbox" value="SMS" />
+          <input 
+          type="checkbox" 
+          value="SMS" 
+          onClick={handleCheckboxChange} />
           SMS
         </label>
         <label>
-          <input type="checkbox" value="Email" />
+          <input 
+          type="checkbox" 
+          value="Email" 
+          onClick={handleCheckboxChange} />
           Email
         </label>
         <label>
-          <input type="checkbox" value="Social Media" />
+          <input 
+          type="checkbox" 
+          value="Social Media" 
+          onClick={handleCheckboxChange} />
           Social Media
         </label>
       </div>
-      <submit className={style.submit} value="SUBMIT">
+      <submit className={handleOrder} value="SUBMIT">
         SUBMIT
       </submit>
     </div>
