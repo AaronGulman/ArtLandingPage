@@ -1,28 +1,42 @@
+import { useState } from "react";
 import style from "./Order.module.css";
 
 const Order = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [telephone, setTelephone] = useState("");
+  const [communication, setCommunication] = useState([]);
+
   return (
-    <form className={style.body}>
+    <div className={style.body}>
       <h1>ORDER NOW</h1>
       <label>Name: </label>
-      <input type="text" />
+      <input type="text" value={clientName} />
       <label>Phone number: </label>
       <input type="tel" />
       <label>Email: </label>
       <input type="email" />
       <label>Preferred Contact Method:</label>
       <div>
-        <input type="checkbox" />
-        WhatsApp
-        <input type="checkbox" />
-        SMS
-        <input type="checkbox" />
-        Email
-        <input type="checkbox" />
-        Social Media
+        <label>
+          <input type="checkbox" />
+          WhatsApp
+        </label>
+        <label>
+          <input type="checkbox" />
+          SMS
+        </label>
+        <label>
+          <input type="checkbox" />
+          Email
+        </label>
+        <label>
+          <input type="checkbox" />
+          Social Media
+        </label>
       </div>
-      <input className={style.submit} type="submit" value="SUBMIT" />
-    </form>
+      <submit className={style.submit} value="SUBMIT">SUBMIT</submit>
+    </div>
   );
 };
 
