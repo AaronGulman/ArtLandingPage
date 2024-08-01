@@ -4,27 +4,34 @@ import style from "./Order.module.css";
 
 const Order = () => {
   const [name, setName] = useState("");
+  const [order, setOrder] = useState("");
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");
   const [preference, setPreference] = useState([]);
 
-
   const handleOrder = () => {
-    if (!name || !email || !telephone) {
-      alert("`All fields are required`");
+    if (
+      !name || 
+      !email || 
+      !order ||
+      !number ||
+      !preference
+      ) {
+      alert("All fields are required");
       return;
     }
 
     const data = {
       name,
+      order,
       email,
       number,
       preference,
     };
 
     axios
-      .post("http:://localhost:5050/orders", data)
-      .then((res) => console.log("Success!\n"), res.data)
+      .post("http://localhost:5050/orders", data)
+      .then((res) => console.log("Success!\n", res.data))
       .catch((err) => console.error(err));
   };
 
@@ -34,7 +41,7 @@ const Order = () => {
       if(checked){
         return [...prevPreference, value];
       }else{
-        return prevPreference.filter(item => item != value)
+        return prevPreference.filter(item => item !== value)
       }
     });
   };
@@ -46,23 +53,27 @@ const Order = () => {
       <label>Name:</label>
       <input
         type="text"
-        value={name}
-        onClick={(e) => setName(e.target.value)}
+          placeholder="Name..."
+          value={name}
+          onChange={(e) => setName(e.target.value)}
       />
       <label>Number:</label>
       <input
         type="tel"
+        placeholder="Phone..."
         value={number}
-        onClick={(e) => setNumber(e.target.value)}
+        onChange={(e) => setNumber(e.target.value)}
       />
 
       <label>Email:</label>
 
       <input
         type="email"
+        placeholder="Email..."
         value={email}
-        onClick={(e) => setEmail(e.target.value)}
+        onChange={(e) => setEmail(e.target.value)}
       />
+
       <label>Preferred Contact Method:</label>
 
       <div>
@@ -70,7 +81,7 @@ const Order = () => {
           <input
             type="checkbox"
             value="WhatsApp"
-            onClick={handleCheckboxChange}
+            onChange={handleCheckboxChange}
           />
           WhatsApp
         </label>
@@ -78,27 +89,31 @@ const Order = () => {
           <input 
           type="checkbox" 
           value="SMS" 
-          onClick={handleCheckboxChange} />
+          onChange={handleCheckboxChange} 
+          />
           SMS
         </label>
         <label>
           <input 
           type="checkbox" 
           value="Email" 
-          onClick={handleCheckboxChange} />
+          onChange={handleCheckboxChange} 
+          />
           Email
         </label>
         <label>
           <input 
           type="checkbox" 
           value="Social Media" 
-          onClick={handleCheckboxChange} />
+          onChange={handleCheckboxChange} 
+          />
           Social Media
         </label>
       </div>
-      <submit className={handleOrder} value="SUBMIT">
-        SUBMIT
-      </submit>
+      <button onClick={handleOrder}>
+        Submit 
+      </button>
+
     </div>
   );
 };
