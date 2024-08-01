@@ -4,11 +4,6 @@ import style from "./Greeting.module.css";
 import Order from "../Order/Order";
 
 function Greeting() {
-  const [isOrderVisible, setIsOrderVisible] = useState(false);
-
-  const toggleOrderVisibility = () => {
-    setIsOrderVisible((prevVisible) => !prevVisible);
-  };
 
   return (
     <div className={style.body}>
@@ -21,10 +16,6 @@ function Greeting() {
         </p>
         <p className={style.paragraph}>(Write about your experience here)</p>
       </div>
-      <button className={style.button} type="button" onClick={toggleOrderVisibility}>
-        Order Now
-      </button>
-      {isOrderVisible && <Order />}
     </div>
   );
 }
