@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios";
 import style from "./Order.module.css";
 
 
@@ -15,7 +16,7 @@ const Order = () => {
       !email || 
       !order ||
       !number ||
-      !preference
+      preference.length == 0
       ) {
       alert("All fields are required");
       return;
@@ -33,6 +34,16 @@ const Order = () => {
       .post("http://localhost:5050/orders", data)
       .then((res) => console.log("Success!\n", res.data))
       .catch((err) => console.error(err));
+
+      setName("");
+      setOrder("");
+      setEmail("");
+      setNumber("");
+      setPreference([]);
+
+      alert("SUCCESS!")
+      window.location.reload();
+      
   };
 
   const handleCheckboxChange = (event) =>{
@@ -50,13 +61,21 @@ const Order = () => {
   return (
     <div className={style.body}>
       <h1>ORDER NOW</h1>
-      <label>Name:</label>
       <input
         type="text"
           placeholder="Name..."
           value={name}
           onChange={(e) => setName(e.target.value)}
       />
+      <label>Order Details:</label>
+
+<input
+        type="textArea"
+          placeholder="Order details..."
+          value={order}
+          onChange={(e) => setOrder(e.target.value)}
+      />
+
       <label>Number:</label>
       <input
         type="tel"
