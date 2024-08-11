@@ -128,6 +128,8 @@ Make sure you have the following installed on your system:
 
 4. Open your browser and navigate to `http://localhost:5173`.
 
+## DO NOT FORGET TO CONFIGURE YOUR OWN .ENV
+
 ### Project Status
 
 This project is currently under development. Features such as order management and additional customization options are in progress. We hope to finish the code soon and release a stable version for artists and creatives to easily set up their personal websites.
