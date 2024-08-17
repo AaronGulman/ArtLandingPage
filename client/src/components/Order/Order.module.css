@@ -5,15 +5,17 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 25em;
-  height: 25em;
-  background: #2f2e2f;
+  width: 30em;
+  height: 30em;
+  background: #000000;
+  border: 5px solid transparent;
   border-radius: 30px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  animation: lazer 10s forwards;
+  animation: lazer 1s infinite;
   padding: 15px;
+  z-index: 10;
 }
 
 input {
@@ -23,7 +25,6 @@ input {
   color: #000;
   border: none;
   padding: 10px;
-
 }
 
 h1 {
@@ -42,8 +43,31 @@ h1 {
 }
 
 @keyframes lazer {
-  100% {
-    box-shadow: -5px 5px 50px #fff, 5px -5px 50px #fff, -10px 10px 50px #fff,
-      10px -10px 50px #fff;
+  /* 100% {
+    box-shadow: 
+    -5px 5px 50px #5900ff, 
+    5px -5px 50px #5900ff, 
+    -10px 10px 50px #5900ff,
+    10px -10px 50px #5900ff;
+  } */
+
+
+  25%{
+    border-top: 5px solid #591ba4;
+
   }
+  50%{
+    border-right: 5px solid #591ba4;
+
+  }
+  75%{
+    border-left: 5px solid #591ba4;
+
+
+  }
+  100%{
+    border-bottom: 5px solid #591ba4;
+
+  }
+
 }
