@@ -134,6 +134,8 @@ Make sure you have the following installed on your system:
 
 This project is currently under development. Features such as order management and additional customization options are in progress. We hope to finish the code soon and release a stable version for artists and creatives to easily set up their personal websites.
 
+Frontend needs to imrpoved and the security of the backend must be prioritized.
+
 ## Contributing
 
  Please feel free to fork the repository, make changes, and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
