@@ -1,7 +1,7 @@
 # Art Landing Page Template
 
 ## Technologies Used
-- **Frontend**: React, plain CSS
+- **Frontend**: React, plain CSS (add tailwind instead)
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
 - **Build Tool**: Vite
