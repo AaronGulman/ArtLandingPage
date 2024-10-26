@@ -2,7 +2,7 @@
 
 ## Technologies Used
 - **Frontend**: React, plain CSS (add tailwind instead)
-- **Backend**: Node.js, Express.js
+- **Backend**: Node.js, Express.js (Nest.js perhaps?)
 - **Database**: MongoDB
 - **Build Tool**: Vite
 - **Package Manager**: npm
